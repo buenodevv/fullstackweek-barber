@@ -2,8 +2,6 @@
 import { Button } from "@/app/_components/ui/button";
 import { ChevronLeftIcon, MenuIcon, MapPinIcon, StarIcon } from "lucide-react";
 import Image from "next/image";
-
-import { db } from "@/app/_lib/prisma";
 import { Barbershop } from "@prisma/client";
 import { useRouter } from "next/navigation";
 import { Sheet, SheetContent, SheetTrigger } from "@/app/_components/ui/sheet";
@@ -17,7 +15,7 @@ const BarbershopInfo = ({ barbershop }: BarbershopInfoProps) => {
     const router = useRouter();
 
     const handleBackClick = () => {
-        router.back();
+        router.replace('/')
     }
     return (
         <div>
