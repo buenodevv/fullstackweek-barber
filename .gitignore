@@ -35,3 +35,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .env
+
+C:\Users\Firstname~1\AppData\Roaming\npm-cache
